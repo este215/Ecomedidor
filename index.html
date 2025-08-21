@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login_Ecocalculadora</title>
+    <link rel="stylesheet" href="style_login.css">
+    
+</head>
+<body>
+   <body>
+    <img src="./ChatGPT Image 7 ago 2025, 21_17_47.png" class="sub6">
+    <div class="sub1" id="login_cont">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="sub2">
+                <input type="text" id="nombre" required>
+                <label>Usuario</label>
+            </div>
+            <div class="sub2">
+                <input type="email" id="correo" required>
+                <label>Correo Electrónico</label>
+            </div>
+            <div class="sub2">
+                <input type="password" id="contrasena" required>
+                <label>Contraseña</label>
+            </div>
+            <div class="sub3">
+                <label><input type="checkbox">Recordar datos de usuario</label>
+            </div>
+            <div class="sub3">
+                <a href="./recuperar_contrasña.html">¿Olvidó su contraseña?</a>
+            </div>
+            <button type="submit" class="sub4">Login</button>
+            <div class="sub5">
+                <p>¿No tiene una cuenta? <a href="./registro.html">Registrarse</a></p>
+            </div>
+            <div class="error" id="error"></div>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Obtener valores
+            const usuario = document.getElementById('nombre').value.trim();
+            const correo = document.getElementById('correo').value.trim();
+            const contrasena = document.getElementById('contrasena').value;
+            
+            // Validar credenciales específicas
+            if (usuario === "usuario" && 
+                correo === "usuario@gmail.com" && 
+                contrasena === "123456") {
+                
+                window.location.href = "ecomedidor_inicio.html";
+                
+            } else {
+                // Mostrar error
+                document.getElementById('error').textContent = "datos incorrectas";
+                document.getElementById('error').style.display = 'block';
+                
+                // Opcional: Limpiar campos después de 3 segundos
+                setTimeout(() => {
+                    document.getElementById('error').style.display = 'none';
+                }, 3000);
+            }
+        });
+    </script>
+</body>
+</html>

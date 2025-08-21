@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoMedidor</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./cal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="menu container">
+        <img
+          class="img"
+          src="./images/ChatGPT Image 7 ago 2025, 21_17_47.png"
+          alt=""
+        />
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+          <img src="./images/menu.png" class="menu-icono" alt="" />
+        </label>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#general" class="btn-1">General</a></li>
+            <li><a href="#colombia" class="btn-1">Colombia</a></li>
+            <li><a href="#calculadora" class="btn-1">Calculadora</a></li>
+            <li><a href="#nosotros" class="btn-1">Nosotros</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-content container">
+        <div class="header-txt">
+          <br />
+          <h1 class="title">EcoMedidor</h1>
+          <h2 id="title">Conciencia energética para un futuro sostenible</h2>
+        </div>
+      </div>
+    </header>
+
+    <section class="general container">
+      <h2>¿Qué es EcoMedidor?</h2>
+      <p>
+        EcoMedidor es una herramienta educativa e interactiva que permite a las
+        personas calcular su consumo eléctrico, conocer el impacto ambiental
+        asociado y reflexionar sobre el uso de energías renovables,
+        especialmente la hidroeléctrica.
+      </p>
+      <hr>
+      <h3>
+        EcoMedidor no es solo una calculadora: es una herramienta informativa
+        diseñada para:
+      </h3>
+      <br />
+      <ul>
+        <li>Sensibilizar sobre el uso responsable de la energía.</li>
+        <li>Mostrar una alternativa más sostenible.</li>
+        <li>
+          Fomentar una ciudadanía informada y comprometida con el medio
+          ambiente.
+        </li>
+      </ul>
+    </section>
+    
+
+   <section class="info-1" id="general">
+      <div class="info-content container">
+        <h2>General</h2>
+        <div class="contenido-box">
+          <div class="info-circle">
+            <div class="circle-txt">
+              <div>
+                <h3>Las energías renovables</h3>
+              </div>
+              <p>
+                son un tipo de energías derivadas de fuentes naturales que
+                llegan a reponerse más rápido de lo que pueden consumirse. Un
+                ejemplo de estas fuentes son, por ejemplo, la luz solar y el
+                viento; estas fuentes se renuevan continuamente. Las fuentes de
+                energía renovable abundan y las encontramos en cualquier
+                entorno.
+              </p>
+            </div>
+            <div class="circle-txt">
+              <div>
+                <h3>¿Por qué importa la energía sostenible?</h3>
+              </div>
+              <p>
+                La transición energética es vital contra el cambio climático: el 80 % de la energía aún proviene de fósiles que emiten 
+                CO₂ y metano. Para cambiarlo debemos:
+              </p>
+              <br />
+              <ul>
+                <li>Usar energías renovables (solar, eólica, hidroeléctrica).</li>
+                <li>Reducir el consumo.</li>
+                <li>Mejorar la eficiencia.</li>
+                <li>Impulsar un desarrollo justo y sostenible.</li>
+              </ul>
+            </div>
+            <div class="circle-txt">
+              <div>
+                <h3>Importancia de las energías limpias</h3>
+              </div>
+              <p>
+                En esencia, la transición energética busca combatir el cambio climático y promover el desarrollo sostenible mediante
+                 energías limpias, eficiencia, nuevas tecnologías y descarbonización. Más que un cambio tecnológico, es un proceso 
+                 que prioriza equidad, inclusión y bienestar humano.
+              </p>
+            </div>
+            <div class="circle-txt">
+              <div>
+                <h3>Energía hidroeléctrica</h3>
+              </div>
+              <p>
+                La energía hidroeléctrica aprovecha el movimiento del agua para generar electricidad. Es renovable, local y de bajo 
+                costo operativo, pero puede causar impactos ambientales si no se gestiona bien. Aporta cerca del 16 % de la 
+                electricidad mundial, aunque los embalses generan hasta el 4 % de las emisiones globales de gases de efecto 
+                invernadero.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="inf_col" id="colombia">
+      <div class="contenedor-principal">
+          <div class="encabezado">
+              <h1 class="titulo-principal"><i class="fas fa-water"></i> Energía Hidroeléctrica en Colombia y el valle de aburra</h1>
+              <p class="subtitulo">Datos y lugares importantes</p>
+          </div>
+          
+          <div class="contenido">
+              <h2 class="seccion-titulo">Datos y Estadísticas Clave</h2>
+              <hr>
+              <div class="contenedor-estadisticas">
+                  <div class="tarjeta-estadistica">
+                      <i class="fas fa-bolt fa-2x"></i>
+                      <div class="valor-estadistica">54,552 GWh</div>
+                      <div class="etiqueta-estadistica">Generación hidroeléctrica (2023)</div>
+                  </div>
+                  
+                  <div class="tarjeta-estadistica">
+                      <i class="fas fa-percentage fa-2x"></i>
+                      <div class="valor-estadistica">66.7%</div>
+                      <div class="etiqueta-estadistica">Participación en el mix energético</div>
+                  </div>
+                  
+                  <div class="tarjeta-estadistica">
+                      <i class="fas fa-industry fa-2x"></i>
+                      <div class="valor-estadistica">78%</div>
+                      <div class="etiqueta-estadistica">Capacidad renovable instalada</div>
+                  </div>
+                  
+                  <div class="tarjeta-estadistica">
+                      <i class="fas fa-plug fa-2x"></i>
+                      <div class="valor-estadistica">30%</div>
+                      <div class="etiqueta-estadistica">Dependencia de Hidroituango</div>
+                  </div>
+              </div>
+              
+<hr>
+              
+              <div class="contenedor-info">
+                  <div class="seccion-colombia">
+                      <div class="seccion-encabezado">
+                          <i class="fas fa-flag"></i>
+                          <h2>Energía Hidroeléctrica en Colombia</h2>
+                      </div>
+                      
+                      <div class="tarjeta-info">
+                          <div class="encabezado-tarjeta">
+                              <h3>Producción Anual (2023)</h3>
+                          </div>
+                          <div class="contenido-tarjeta">
+                              <p>"La generación hidráulica en Colombia durante 2023 fue de 54.552 GWh"<span class="fuente">(XM, 2024, p. 17)</span></p>
+                          </div>
+                      </div>
+                      
+                      <div class="tarjeta-info">
+                          <div class="encabezado-tarjeta">
+                              <h3>Mix Energético (2023)</h3>
+                          </div>
+                          <div class="contenido-tarjeta">
+                              <p>"La hidroelectricidad representó el 66.7% de la generación total. Otras fuentes: térmica (24.5%), eólica (3.1%), solar (1.5%), biomasa (0.8%) y pequeñas hidroeléctricas (3.4%)"<span class="fuente">(XM, 2024, p. 9)</span></p>
+                          </div>
+                      </div>
+                      
+                      <div class="tarjeta-info">
+                          <div class="encabezado-tarjeta">
+                              <h3>Principales Centrales</h3>
+                          </div>
+                          <div class="contenido-tarjeta">
+                              <p>"Las mayores por capacidad instalada son: San Carlos (1.240 MW), Jaguas (1.140 MW), Chivor (1.000 MW), Guavio (970 MW) e Hidroituango (actualmente 1.200 MW en fase de llenado)"<span class="fuente">(UPME, 2023; EPM, 2024)</span></p>
+                          </div>
+                      </div>
+                      
+                      <div class="tarjeta-info">
+                          <div class="encabezado-tarjeta">
+                              <h3>Primera Central</h3>
+                          </div>
+                          <div class="contenido-tarjeta">
+                              <p>"La pionera fue la central de Guadalupe IV (Bogotá), inaugurada en 1927 con 8.7 MW"<span class="fuente">(Ministerio de Minas y Energía, 2022, p. 34)</span></p>
+                          </div>
+                      </div>
+                      
+                      <div class="tarjeta-info">
+                          <div class="encabezado-tarjeta">
+                              <h3>Transición Energética</h3>
+                          </div>
+                          <div class="contenido-tarjeta">
+                              <p>"Las hidroeléctricas son el núcleo del plan de descarbonización nacional. El 78% de la capacidad instalada del país (19.5 GW) corresponde a fuentes renovables, lideradas por hidráulica"<span class="fuente">(UPME, 2023, p. 45)</span></p>
+                          </div>
+                      </div>
+                      
+                      <div class="contenedor-centrales">
+                          <h3>Centrales Hidroeléctricas Principales</h3>
+                          <ul class="lista-centrales">
+                              <li><strong>San Carlos</strong>: 1.240 MW</li>
+                              <li><strong>Jaguas</strong>: 1.140 MW</li>
+                              <li><strong>Chivor</strong>: 1.000 MW</li>
+                              <li><strong>Guavio</strong>: 970 MW</li>
+                              <li><strong>Hidroituango</strong>: 1.200 MW (en fase de llenado)</li>
+                          </ul>
+                      </div>
+                  </div>
+                  
+                  <div class="seccion-valle">
+                      <div class="seccion-encabezado">
+                          <i class="fas fa-mountains"></i>
+                          <h2>Valle de Aburrá</h2>
+                      </div>
+                      
+                      <div class="tarjeta-info">
+                          <div class="encabezado-tarjeta">
+                              <h3>Dependencia de Hidroituango</h3>
+                          </div>
+                          <div class="contenido-tarjeta">
+                              <p>"El 30% de la energía consumida en el Valle de Aburrá proviene de Hidroituango (2.4 GW), proyecto estratégico de EPM que aporta el 17% de la generación nacional. Actualmente opera con 8 de 8 turbinas"<span class="fuente">(EPM, 2024, Reporte Operativo)</span></p>
+                          </div>
+                      </div>
+                      
+                      <div class="tarjeta-info">
+                          <div class="encabezado-tarjeta">
+                              <h3>Sistema Integrado de Generación</h3>
+                          </div>
+                          <div class="contenido-tarjeta">
+                              <p>"EPM complementa Hidroituango con un sistema de 27 pequeñas centrales hidroeléctricas en el Valle de Aburrá (ej. La Herradura, Guadalupe IV), cubriendo el 68% de la demanda regional con fuentes renovables"<span class="fuente">(Ministerio de Minas y Energía, 2022, p. 71)</span></p>
+                          </div>
+                      </div>
+                      
+                      <div class="tarjeta-info">
+                          <div class="encabezado-tarjeta">
+                              <h3>Hidroituango en Cifras</h3>
+                          </div>
+                          <div class="contenido-tarjeta">
+                              <p>
+                                  <strong>Capacidad:</strong> 2.4 GW (17% de la generación nacional)<br>
+                                  <strong>Turbinas:</strong> 8 operando a plena capacidad<br>
+                                  <strong>Inversión:</strong> Más de $14 billones de pesos<br>
+                                  <strong>Altura:</strong> 225 metros (una de las más altas de Latinoamérica)<br>
+                                  <strong>Generación anual:</strong> Aprox. 13,930 GWh<br>
+                                  <strong>Población beneficiada:</strong> Más de 8 millones de personas
+                              </p>
+                          </div>
+                      </div>
+                      
+                      <div class="tarjeta-info">
+                          <div class="encabezado-tarjeta">
+                              <h3>Centrales Locales</h3>
+                          </div>
+                          <div class="contenido-tarjeta">
+                              <p>Además de Hidroituango, el Valle de Aburrá cuenta con numerosas pequeñas centrales hidroeléctricas que complementan la generación de energía limpia:</p>
+                              <ul style="margin-top: 15px; padding-left: 20px;">
+                                  <li>Central La Herradura</li>
+                                  <li>Central Guadalupe IV</li>
+                                  <li>Central San Cristóbal</li>
+                                  <li>Central La Vuelta</li>
+                                  <li>Central Piedras Blancas</li>
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="pie-pagina">
+              <p>Sistema de Información sobre Energía Hidroeléctrica</p>
+              <p>Datos actualizados a 2024 | Fuentes: XM, UPME, EPM, Ministerio de Minas y Energía</p>
+          </div>
+      </div>
+        
+      
+    </section>
+   <section class="info-2" id="calculadora">
+      <div class="info-content container">
+        <h2>Medidor</h2>
+        <div class="resultado-box">
+          <p>
+            Introduce el consumo de energía que aparece en tu factura mensual:
+          </p>
+          <label>Consumo mensual (kWh): <br></label>
+            <input type="number" id="consumoUsuario" placeholder=" Ejemplo: 150"
+            class="campos"/> <br /><br />
+          <button onclick="calcularDesdeFactura()" class="btn-2">Calcular</button><br /><br />
+          <h3>Resultados:</h3>
+          <p id="resultadoKwh"></p>
+          <p id="resultadoHidro"></p>
+          <p id="resultadoCO2"></p>
+          <canvas id="graficoConsumo" width="400" height="200" style="display: none;" class="grafico-transicion"></canvas>
+        </div>
+      </div>
+  </section>
+<footer class="footer container">
+        <div class="botones-final">
+            <a href="./nosotros/quienes.html" class="btn-2" id="nosotros">Nosotros</a>
+            <a href="#" class="btn-2" id="btn-referencias">Referencias</a>
+            <a href="./reporte.html" class="btn-2">Análisis de datos</a>
+        </div>
+      <div class="footer-txt">
+        <p>© 2025 EcoMedidor - Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <div id="modalReferencias" class="modal">
+      <div class="modal-content">
+        <span class="cerrar">&times;</span>
+        <h2>Referencias</h2>
+        <ul>
+          <li>
+            <a href="https://www.minenergia.gov.co" target="_blank">
+              Ministerio de Minas y Energía de Colombia
+            </a>
+          </li>
+          <li>
+            <a href="https://www.iea.org" target="_blank">
+              Agencia Internacional de Energía (IEA)
+            </a>
+          </li>
+          <li>
+            <a href="http://www.ideam.gov.co" target="_blank">
+              IDEAM - Informe Nacional de Energía
+            </a>
+          </li>
+          <li>
+            <a href="https://www.worldbank.org/es/topic/energy" target="_blank">
+              Banco Mundial: Energía y Desarrollo Sostenible
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+    <script>
+      document.getElementById("btn-referencias").onclick = function(e) {
+        e.preventDefault();
+        document.getElementById("modalReferencias").style.display = "block";
+      };
+      document.querySelector(".cerrar").onclick = function() {
+        document.getElementById("modalReferencias").style.display = "none";
+      };
+      window.onclick = function(event) {
+        const modal = document.getElementById("modalReferencias");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    </script>
+
+    <button id="btnsubir" title="Volver arriba">↑</button>
+
+    <script>
+      const btnsubir = document.getElementById("btnsubir");
+      window.addEventListener("scroll", function() {
+      if (document.documentElement.scrollTop > 200) {
+        btnsubir.classList.add("show");
+      } else {
+        btnsubir.classList.remove("show");
+      }
+      });
+      btnsubir.addEventListener("click", function() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+    <script>
+      window.onscroll = function() {
+        let btnsubir = document.getElementById("btnsubir");
+        if (document.documentElement.scrollTop > 200 ||documente.documentElement.scrollTop > 200) {
+          btnsubir.style.display = "block";
+        } else {
+          btnsubir.style.display = "none";
+        }
+      };
+      btnsubir.addEventListener("click", function() {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+
+  </body>
+</html>

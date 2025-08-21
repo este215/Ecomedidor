@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:url(./images/pexels-denitsa-kireva-2915302-14594595.jpg);
+    animation: gradientBG 15s ease infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+}
+.sub6{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.sub6 img{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    display: flex;
+}
+@keyframes gradientBG{
+    0%{background-position: 0% 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0% 50%;}
+}
+.sub1{
+    position: relative;
+    width: 300px;
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    background: rgba(255,255, 255,0.1);
+    border: 1px solid rgb(255, 255, 255,0.4);
+    box-shadow: 0 25px 45px rgb(0, 0, 0,0.4);
+    z-index: 10;
+    overflow: hidden;
+}
+.sub1::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(84, 84, 84, 0.05);
+    transform:skewX(-15deg);
+    transition: 0.5s;
+    pointer-events: none;
+}
+.sub1 h2{
+    color: aliceblue;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgb(0, 0,0,0.2);
+}
+.sub2{
+    position:relative;
+    margin-bottom: 25px;
+}
+.sub2 input {
+    width: 100%;
+    padding: 14px 20px;
+    background:#fff;
+    border:none;
+    border-radius: 50px;
+    font-size: 15px;
+    color:black;
+    box-shadow: 0 2px 15px rgb(0,0,0,00.5s);
+    transition: all 0.3s ease;
+}
+.sub2 input::placeholder{
+    color:beige;
+}
+.sub2 input :focus{
+    background: rgb(255, 255, 255,0.3);
+    box-shadow: 0 8px 20px rgb(0, 0,0,0.1)
+}
+.sub2 label{
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color:darkgray;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all0.3s ease;
+}
+.sub2 input:focus+label,
+.sub2 input:valid+label{
+    top: 0;
+    left: 15px;
+    font-size: 12px;
+    background: rgba(255,255, 255,0.2);
+    padding: 2px 8px;
+    border-radius: 10px;
+    color: ivory;
+}
+.sub3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+    color:azure;
+}
+.sub3 label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.sub3 input{
+    margin-right: 8px;
+    accent-color:#fff;
+}
+.sub3 a{
+    color: #fff;
+    text-decoration:none;
+    transition: all 0.3s ease;
+}
+.sub3 a:hover{
+    text-decoration:underline;
+}
+.sub4{
+    width: 100%;
+    padding: 15px;
+    background: rgb(255, 255, 255,0.3);
+    border: black;
+    outline:none;
+    border-radius: 60px;
+    color:black;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px rgba(255,255, 255,0.2);
+}
+.sub4:hover{
+    background: rgb(255, 255, 255,0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgb(0, 0,0,0.8);
+}
+.sub5{
+    text-align: center;
+    margin-top: 25px;
+    color: aliceblue;
+    font-size: 15px;
+}
+.sub5 a{
+    color: #fff;
+    font-size: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.sub5 a:hover{
+    text-decoration: underline;
+}
+.error{
+    color:black;
+    background-color: #fff;
+    text-align: center;
+    border:black;
+    border-radius: 10px;
+    width: 100%;
+    text-decoration: solid;
+
+}
